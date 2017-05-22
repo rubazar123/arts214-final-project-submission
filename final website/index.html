@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
+
+   <!-- Replace FIRST NAME and LAST NAME below with your first and last names. -->
+   <title>Ruben Yelizarov</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/css/font-awesome.css">
+
+    <script src="fonts/css/masonry.pkgd.js">
+    </script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+</head>
+
+<body>
+    
+    <!-- Test Image -->
+    
+    <!-- Modal -->
+    <div id="Modal" class="lightBox">
+        <span class="close cursor" onclick="closeModal()">
+            &times;
+        </span>
+        <a class="prev" onclick="arrow(-1)">&#10094;</a>
+        <a class="next" onclick="arrow(1)">&#10095;</a>
+        <div class="modal-content" id="modal-content-id">
+            <div id="img-container">
+                <div class="images">
+                    <img src="img/IMG_1638.jpg">
+                </div>
+
+                <div class="images">
+                    <img src="img/IMG_9721.jpg" >
+                </div>
+
+                <div class="images">
+                    <img src="img/IMG_8071.jpg" >
+                </div>
+    
+                <div class="images">
+                    <img src="img/IMG_8251.jpg" >
+                </div>
+            
+                <div class="images">
+                    <img src="img/Untitled-1.jpg" >
+                </div>
+            
+                <div class="images">
+                    <img src="img/IMG_8390.jpg" >
+                </div>
+            
+                <div class="images">
+                    <img src="img/IMG_8276.jpg" >
+                </div>
+            
+                <div class="images">
+                    <img src="img/IMG_9673.jpg" >
+                </div>
+            
+                <div class="images">
+                    <img src="img/IMG_1691.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Website HTML -->
+    <div class="container">
+        <header>
+            <div id="fixed-Navigation">
+                <div id="menu" class="hamburger-menu" onclick="animateMenu(this);openMenuBar()">
+                    <div >
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div id="nav-background">
+                    <nav id="nav" class="navigation" onclick="animateMenu(document.getElementById('menu'));openMenuBar()">
+                        <div id="nav-gallery">
+                            <a 
+                               href="#Gallery">GALLERY
+                            </a>
+                        </div>
+                        <div id="nav-aboutme">
+                            <a 
+                               href="#AboutMe">ABOUT ME
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+
+                <a href="#">
+                    <div id="logo">
+                        <img src="img/frameous%20logo.png">
+                    </div>
+                </a>
+
+
+                <nav id="nav-big">
+                    <div id="nav-gallery-big">
+                        <a 
+                           href="#Gallery">GALLERY
+                        </a>
+                    </div>
+                    <div id="nav-aboutme-big">
+                        <a 
+                           href="#AboutMe">ABOUT ME
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div id="top-spacing">
+            </div>
+            <img id="hero-img" src="img/hero.jpg">
+            <h1 id="title">
+                FRAMEOUS PHOTOS
+            </h1>
+            <a href="#GallerySection">
+                <img id="downArrow-img" src="img/down%20arrow.png">
+            </a>
+            <div id="GallerySection"></div>
+        </header>
+        <section>
+            <h1 id="Gallery-title">
+                GALLERY
+                <div id="underline1"></div>
+            </h1>
+
+            <div id="Gallery">
+                <div id="Gallery_images" class="grid">
+                    <img class="grid-item" src="img/IMG_1638.jpg" onclick="openModal();currentIMG(1)">
+                    <img class="grid-item" src="img/IMG_9721.jpg" onclick="openModal();currentIMG(2)">
+                    <img class="grid-item" src="img/IMG_8071.jpg" onclick="openModal();currentIMG(3)">
+                    <img class="grid-item" src="img/IMG_8390.jpg" onclick="openModal();currentIMG(6)">
+                    <img class="grid-item" src="img/Untitled-1.jpg" onclick="openModal();currentIMG(5)">
+                    <img class="grid-item" src="img/IMG_8251.jpg" onclick="openModal();currentIMG(4)">
+                    <img class="grid-item" src="img/IMG_8276.jpg" onclick="openModal();currentIMG(7)">
+                    <img  class="grid-item" src="img/IMG_9673.jpg" onclick="openModal();currentIMG(8)">
+                    <img  class="grid-item" src="img/IMG_1691.jpg" onclick="openModal();currentIMG(9)">
+                </div>
+            </div>
+        
+        </section>
+        <section>
+            <div id="AboutMe">
+                <h1 id="AboutMe-title">
+                    ABOUT ME
+                    <div id="underline2"></div>
+                </h1>
+                <p id="AboutMe-paragraph">
+                    My name is Ruben Yelizarov and I am a 22 year old photographer who decided it would be
+                </p>
+                <p id="AboutMe-paragraph2">
+                    a good idea to take a web design course - having no formal knowledge on design what-so-ever.
+                </p>
+                <img id="AboutMe-img" src="img/hybrid%201.jpg">
+            </div>
+        </section>
+        <footer>
+            <div id="Contact" class="greyBG">
+                <h1 id="endNote">Contact<br></h1>
+                <div id="links">
+                    <a href="mailto:ruben.yelizar@gmail.com" target="_blank">
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.facebook.com/imiragestudio" target="_blank">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/frameousphotos" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+<script>
+    /*Images Loaded Initialization*/
+    new imagesLoaded('#Gallery_images', function()
+    {
+            /* Masonry Initialization*/
+        var elem = document.querySelector('.grid');
+        var masonry = new Masonry(elem, 
+        {
+            itemSelector: '.grid-item',
+            columnWidth: 1,
+            isFitWidth: true
+        });
+    });
+                /* Masonry Initialization*/
+        var elem = document.querySelector('.grid');
+        var masonry = new Masonry(elem, 
+        {
+            itemSelector: '.grid-item',
+            columnWidth: 1,
+            isFitWidth: true
+        });
+    
+    
+    var modal = document.getElementById('Modal');
+    var nav = document.getElementById('nav');
+    var menu = document.getElementById('menu');
+    var navBG = document.getElementById('nav-background');
+    var imageContainer = document.getElementById('img-container');
+    var gallery = document.getElementById('nav-gallery');
+    var aboutme = document.getElementById('nav-aboutme');
+    
+    var imageContainerHeight;
+    var innerHeight = window.screen.height;
+    
+    function openMenuBar()
+    {
+        if(window.innerWidth<=768)
+        {
+            if(window.getComputedStyle(nav).display === 'none')
+            {
+                nav.style.display = "block";
+                gallery.style.display = "block";
+                aboutme.style.display = "block";
+                navBG.style.backgroundColor = "white";
+                navBG.style.zIndex = "3";
+                navBG.style.display = "block";
+            }   
+            else
+            {
+                nav.style.display = "none";
+                gallery.style.display = "none";
+                aboutme.style.display = "none";
+                navBG.style.backgroundColor = "transparent";
+                //navBG.style.zIndex = "-1";
+                navBG.style.display = "none";
+            }
+        }
+    };
+    function openModal()
+    {
+        document.getElementById('Modal').style.display = "block";
+        
+        imageContainerHeight = parseFloat(window.getComputedStyle(imageContainer).height);
+        
+        innerHeight = window.screen.height;
+        
+        verticalAlign(innerHeight, imageContainerHeight);
+
+    };
+
+    function closeModal() 
+    {
+        document.getElementById('Modal').style.display = "none";
+    };
+
+    var currImage = 1;
+    showIMG(currImage);
+
+    function arrow(n) 
+    {
+        showIMG(currImage += n);
+        imageContainerHeight = parseFloat(window.getComputedStyle(imageContainer).height);
+        innerHeight = window.screen.height;
+        verticalAlign(innerHeight,imageContainerHeight);
+    };
+
+    function currentIMG(n) 
+    {
+        showIMG(currImage = n);
+    };
+
+    function showIMG(n) 
+    {
+        var i;
+        var imageArray = document.getElementsByClassName("images");
+        if (n > imageArray.length) 
+        {
+            currImage = 1;
+        }
+        if (n < 1) 
+        {
+            currImage = imageArray.length;
+        }
+        for (i = 0; i < imageArray.length; i++) 
+        {
+            imageArray[i].style.display = "none";
+        }
+        imageArray[currImage-1].style.display = "block";
+    };
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    };
+    window.onresize = function()
+    {
+        var innerHeight = window.screen.height;
+        imageContainerHeight = parseFloat(window.getComputedStyle(imageContainer).height);
+        if (window.innerWidth>=768)
+        {
+            nav.style.display = "none";
+            gallery.style.display = "none";
+            aboutme.style.display = "none";
+            contact.style.display = "none";
+        }
+        verticalAlign(innerHeight,imageContainerHeight);
+    }
+    window.addEventListener('keydown',function (e) 
+    {
+       if (e.keyCode === 37)
+       {
+          arrow(-1); 
+       }
+       if (e.keyCode === 39)
+       {
+          arrow(1); 
+       }
+       if (e.keyCode === 27)
+       {
+            closeModal();
+       }
+    },false);
+    function animateMenu(x) 
+    {
+        x.classList.toggle("change");
+    }
+    function verticalAlign(innerHeight,imageHeight)
+    {
+        console.log(window.screen.height);
+        console.log(parseInt(window.getComputedStyle(imageContainer).height));
+        console.log((window.screen.height - parseInt(window.getComputedStyle(imageContainer).height))/2);
+        
+        modal.style.paddingTop = ((innerHeight - imageHeight)/4)+"px";
+        
+    }
+</script>
+    
+</body>
+</html>
